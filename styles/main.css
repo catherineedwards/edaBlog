@@ -16,3 +16,9 @@ html {
     background-color: #663399;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+a:hover {
+    background-color: red;
+}
+.nyan:hover {
+    content: url(./../assets/nyan_cat.gif)
+}
