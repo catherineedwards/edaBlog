@@ -14,4 +14,9 @@ hr {
 
 h3 {
     padding-left: 1em;
+
+}
+
+.Content {
+    -webkit-padding-start: 2em;
 }
