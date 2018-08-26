@@ -20,3 +20,12 @@ h3 {
 .Content {
     -webkit-padding-start: 2em;
 }
+
+.responsive {
+    max-width: 400px;
+    height: auto;
+}
+.responsivetall {
+    max-height: 600px;
+    width: auto;
+}
