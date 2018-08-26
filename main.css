@@ -1,0 +1,21 @@
+p {
+    padding-left: 0.5em;
+}
+
+hr {
+    border-color: purple;
+    background-color: purple;
+    border-style: solid;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid;
+    }
+
+.Heading {
+    padding-left: 1em;
+    padding-top: 2em;
+}
+
+h3 {
+    padding-left: 2em;
+}
