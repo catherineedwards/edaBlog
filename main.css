@@ -1,7 +1,3 @@
-p {
-    padding-left: 0.5em;
-}
-
 hr {
     border-color: purple;
     background-color: purple;
@@ -17,5 +13,5 @@ hr {
 }
 
 h3 {
-    padding-left: 2em;
+    padding-left: 1em;
 }
