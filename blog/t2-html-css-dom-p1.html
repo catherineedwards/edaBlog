@@ -1,114 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Cathy Edwards - EDA</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link href="../main.css" rel="stylesheet" type="text/css">
-  </head>
+</head>
 
-  <body>
+<body>
 
 
     <div class="Heading">
-      <div class="row">
-        <div class="eleven columns">
-            <div class="Icon">
-         <img class="one column" alt="Profile image of Cathy Edwards" src="../images/icon.jpg">
+        <div class="row">
+            <div class="eleven columns">
+                <div class="Icon">
+                    <img class="one column" alt="Profile image of Cathy Edwards" src="../images/icon.jpg">
+                </div>
+                <h1>Cathy Edwards</h1>
             </div>
-          <h1>Cathy Edwards</h1>
         </div>
-      </div>
 
-    </div>    
+    </div>
     <hr>
-    
+
     <div class="Content">
-      <div class="row">
-        <div class="three columns">
-          <h3>Who I am</h3>
-          <h3>What I do</h3>
-          <h3>Contact me</h3>
-          <h3><a href="../index.html">Back to home page</a></h3>
+        <div class="row">
+            <div class="three columns">
+                <h3>Who I am</h3>
+                <h3>What I do</h3>
+                <h3>Contact me</h3>
+                <h3><a href="../index.html">Back to home page</a></h3>
+            </div>
+
+            <div class="nine columns">
+                <div class="row">
+                    <h2>Sprint 2 Technical blog - HTML, CSS and the DOM part 1</h2>
+                    <h4>Design wishlist</h4>
+                    <p>
+                        I visited a number of design sites on <a href="http://www.csszengarden.com/">CSS Zen Garden</a>.
+                        From the site, I collected some design elements I would like to incorporate into my own site.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="http://www.csszengarden.com/218/">A whole page that conjures a retro "jar label"
+                                look</a>.
+                        </li>
+                        <li>
+                            <a href="http://www.csszengarden.com/217/">Bold, colourful menu design that could easily be
+                                a contents page in a modern print magazine</a>.
+                            <ul>
+                                <li>From the same page, hovering over a link changes the colour of the underline.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.csszengarden.com/213/">From what I can see, the footer comprises a
+                                transparent image that overlays the body content, giving a "hovering" look - just
+                                exquisite</a>!
+                        </li>
+                        <li>
+                            <a href="http://www.csszengarden.com/037/"> The way this content spread out across a number
+                                of columns is elegant and appealing</a>.
+                        </li>
+                        <li><a href="http://www.csszengarden.com/057/">The seamless transition between the header and
+                                the footer conveying the "breakfast" story agnostic of the body content is minimalist
+                                yet effective</a>.</li>
+                    </ul>
+                    <h4>Can you think of an analogy to describe HTML, CSS and the DOM?</h4>
+                    <p>
+                        The closest and most universal analogy that springs to mind is to liken the way these
+                        technologies interface with one another is how someone would think about building their own
+                        home. I'm not talking about buying a house and giving it a new coat of paint: I'm talking about
+                        building a <i>home</i> from the ground up.
+                    </p>
+                    <p>
+                        There's so much to think about when considering what makes a house your <i>home</i>: how it's
+                        going to make you comfortable, how it's going to hold out in the weather, what you're going to
+                        do in it, how you're going to have friends and family over in it, etc.
+                    </p>
+                    <p>
+                        I'd say HTML, CSS, and the DOM are analogous to the functionality, style, and structure of a
+                        house (in that respective order).
+                    </p>
+                    <h4>How would you describe it to your non-technical friend?</h4>
+                    <p>
+                        If my friend has explicitly asked me to provide an analogous explanation, I would say that:
+                        <ul>
+                            <li>
+                                <b>The Document Object Model</b> forms the foundations for your house: the concrete
+                                slab with the gas, water, electricity, communications pipelines all sticking through,
+                                ready to be plugged into the rest of your house as it's built. It defines the
+                                underlying structure of your house, making sure it is compatible with the
+                                neighbourhood's infrastructure around it.</li>
+                            <li>
+                                <b>The HTML</b> of your webpage is the functionality of your home. It defines where the
+                                bedrooms are using timber frames, gyprock, windows stairs between floors, a roof,
+                                flooring, plumbing and cabling for where gas, electricity, communications and water
+                                need to be supplied, and drainage. It shows how you're going structure your home (using
+                                boxes - rooms!), where the contents need to go, how you're going to use them, and
+                                making sure everything is there for it work for you.
+                            </li>
+                            <li>
+                                <b>CSS</b> defines the styling of your home. It'll tell you what rooms need to have
+                                what colour doors, what kind of handles to open these doors, what texture the carpet
+                                needs to be, what temperature it needs to be comfortable, what style furniture you
+                                like, and more. CSS sets the <i>desirability</i> of your home, so you can make it
+                                reflect who you are and what makes you happy!
+                            </li>
+                        </ul>
+                        <h4>What is meant by <i>boxifying design</i>?</h4>
+                        <p>
+                            The <i>boxifying design</i> is the art of thinking of everything we apply to a webpage and
+                            its contents in terms of boxes. Text, columns, images, headings - they all live in a box,
+                            no matter how they actually appear to the human eye. These boxes are their own elements and
+                            have their own properties in their own right - their sizes, alignment, colours and borders
+                            can be modified and styled.
+                        </p>
+                        <h4>What is the box model?</h4>
+                        <p>
+                            The <i>box model</i> refers to the properties an element has the can be modified using a
+                            combination of HTML and CSS.
+                        </p>
+                        <p>
+                            Starting from the inside, the <i>content</i> refers to the content itself, which can be
+                            text or media.
+                        </p>
+                        <p>
+                            Wrapped around the content is the <i>padding</i> - essentially, modifiable empty space.
+                        </p>
+                        <p>
+                            The <i>border</i> defines the edging of the padding.
+                        </p>
+                        <p>
+                            The <i>marging</i> works much like a page margin: blank space that encapsulates the element
+                            in its entirety.
+                        </p>
+                        <p>
+                            In sum, the box model gives definition and versatility to elements within an HTML page. It
+                            can be tedious to master, but incredibly powerful. Honestly, I would have rather used this
+                            model rather than embedding images in Microsoft Word for all of my school assignments
+                            growing up (Oh. My. Word.).
+                        </p>
+
+                </div>
+            </div>
         </div>
-          
-         <div class="nine columns">
-          <div class="row">
-    <h2>Sprint 2 Technical blog - HTML, CSS and the DOM part 1</h2>
-    <h4>Design wishlist</h4>
-    <p>
-        I visited a number of design sites on <a href="http://www.csszengarden.com/">CSS Zen Garden</a>. From the site, I collected some design elements I would like to incorporate into my own site.
-    </p>
-    <ul>
-        <li>
-            <a href="http://www.csszengarden.com/218/">A whole page that conjures a retro "jar label" look</a>.
-        </li>
-        <li>
-            <a href="http://www.csszengarden.com/217/">Bold, colourful menu design that could easily be a contents page in a modern print magazine</a>.
-            <ul>
-            <li>From the same page, hovering over a link changes the colour of the underline.</li>
-            </ul>
-        </li>
-        <li>
-            <a href="http://www.csszengarden.com/213/">From what I can see, the footer comprises a transparent image that overlays the body content, giving a "hovering" look - just exquisite</a>!
-        </li>
-        <li>
-            <a href="http://www.csszengarden.com/037/"> The way this content spread out across a number of columns is elegant and appealing</a>.
-        </li>
-        <li><a href="http://www.csszengarden.com/057/">The seamless transition between the header and the footer conveying the "breakfast" story agnostic of the body content is minimalist yet effective</a>.</li>
-    </ul>
-    <h4>Can you think of an analogy to describe HTML, CSS and the DOM?</h4>
-    <p>
-        The closest and most universal analogy that springs to mind is to liken the way these technologies interface with one another is how someone would think about building their own home. I'm not talking about buying a house and giving it a new coat of paint: I'm talking about building a <i>home</i> from the ground up.
-    </p>
-    <p>
-        There's so much to think about when considering what makes a house your <i>home</i>: how it's going to make you comfortable, how it's going to hold out in the weather, what you're going to do in it, how you're going to have friends and family over in it, etc.
-    </p>
-    <p>
-        I'd say HTML, CSS, and the DOM are analogous to the functionality, style, and structure of a house (in that respective order).
-    </p>
-    <h4>How would you describe it to your non-technical friend?</h4>
-    <p>
-       If my friend has explicitly asked me to provide an analogous explanation, I would say that:
-       <ul>
-           <li>
-               <b>The Document Object Model</b> forms the foundations for your house: the concrete slab with the gas, water, electricity, communications pipelines all sticking through, ready to be plugged into the rest of your house as it's built. It defines the underlying structure of your house, making sure it is compatible with the neighbourhood's infrastructure around it.</li>
-           <li>
-                <b>The HTML</b> of your webpage is the functionality of your home. It defines where the bedrooms are using timber frames, gyprock, windows stairs between floors, a roof, flooring, plumbing and cabling for where gas, electricity, communications and water need to be supplied, and drainage. It shows how you're going structure your home (using boxes - rooms!), where the contents need to go, how you're going to use them, and making sure everything is there for it work for you.
-           </li>
-           <li>
-               <b>CSS</b> defines the styling of your home. It'll tell you what rooms need to have what colour doors, what kind of handles to open these doors, what texture the carpet needs to be, what temperature it needs to be comfortable, what style furniture you like, and more. CSS sets the <i>desirability</i> of your home, so you can make it reflect who you are and what makes you happy!
-           </li>
-       </ul>
-    <h4>What is meant by <i>boxifying design</i>?</h4>
-    <p>
-        The <i>boxifying design</i> is the art of thinking of everything we apply to a webpage and its contents in terms of boxes. Text, columns, images, headings - they all live in a box, no matter how they actually appear to the human eye. These boxes are their own elements and have their own properties in their own right - their sizes, alignment, colours and borders can be modified and styled.
-    </p>
-    <h4>What is the box model?</h4>
-    <p>
-        The <i>box model</i> refers to the properties an element has the can be modified using a combination of HTML and CSS.
-    </p>
-    <p>
-        Starting from the inside, the <i>content</i> refers to the content itself, which can be text or media.
-    </p>
-    <p>
-        Wrapped around the content is the <i>padding</i> - essentially, modifiable empty space.
-    </p>
-    <p>
-        The <i>border</i> defines the edging of the padding.
-    </p>
-    <p>
-        The <i>marging</i> works much like a page margin: blank space that encapsulates the element in its entirety.
-    </p>
-    <p>
-        In sum, the box model gives definition and versatility to elements within an HTML page. It can be tedious to master, but incredibly powerful. Honestly, I would have rather used this model rather than embedding images in Microsoft Word for all of my school assignments growing up (Oh. My. Word.).
-    </p>
-                
-</div>
-</div>  
-</div>
-</div>  
+    </div>
 </body>
+
 </html>

@@ -5,7 +5,7 @@ hr {
     height: 2px;
     border: 0;
     border-top: 1px solid;
-    }
+}
 
 .Heading {
     padding-left: 1em;
@@ -14,7 +14,6 @@ hr {
 
 h3 {
     padding-left: 1em;
-
 }
 
 .Content {
@@ -25,6 +24,7 @@ h3 {
     max-width: 400px;
     height: auto;
 }
+
 .responsivetall {
     max-height: 600px;
     width: auto;
