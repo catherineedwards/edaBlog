@@ -94,7 +94,7 @@ Once the user clicks the equals button `=`, we need to perform the calculation b
 
 First, push all entries from `temp` into `entries`.
 
-Then, create a new variable that holds our result. In this calculator, it's called `nt`, but I am not sure of the thinking behind that naming. I might call it `result` in my calculator for clarity's take.
+Then, create a new variable that holds our result. In this calculator, it's called `nt`, but I am not sure of the thinking behind that naming. I might call it `result` in my calculator for clarity's sake.
 
 We need to look through all of the values in our `entries` array and understand what's been pushed into there by the buttons. We will need to create a `for` loop for looking through `entries.length`.
 
