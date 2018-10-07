@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cathy Edwards - EDA</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="../main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+    <div class="Heading">
+        <div class="row">
+            <div class="eleven columns">
+                <div class="Icon">
+                    <img class="one column" alt="Profile image of Cathy Edwards" src="../images/icon.jpg">
+                </div>
+                <h1>Cathy Edwards</h1>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="Content">
+        <div class="row">
+            <div class="three columns">
+                <h3>Who I am</h3>
+                <h3>What I do</h3>
+                <h3>Contact me</h3>
+                <h3><a href="../index.html">Back to home page</a></h3>
+            </div>
+
+            <div class="nine columns">
+                <div class="row">
+
+
+                    <h2>Sprint 8 Technical Blog - Scope</h2>
+                    <h4>What is <i>scope</i>, and how does it work in Javascript?</h4>
+                    <p>
+                        Scope is a funny word in the world of tech. It can refer to the scope of the project we're
+                        working on (and its evil twin: <a href="https://en.wikipedia.org/wiki/Scope_creep">scope creep</a>).
+                        In video gaming, <a href="https://knowyourmeme.com/memes/360-no-scope">360 No Scope</a> is a
+                        trick shot that has descended into dank meme status. But we're here to talk programming, and
+                        specifically Javascript: so what is scope in Javascript?
+                    </p>
+                    <p>
+                        Scope in Javascript defines the boundary or threshold in which a declared object or variable is
+                        going to be used within the code. We can define an object or variable's scope by two parameter:
+                        <i>global</i> or <i>local</i>. It's important to note that we don't explicitly declare the
+                        scope of objects or variables in the code: we implicitly define their scope by where they are
+                        placed in the context of code. They are can be localised to a function, or global to the whole
+                        of the code.
+                    </p>
+                    <h5>Why define scope?</h5>
+                    <p>
+                        Good, clean code comprises lots of smaller functions that are strongly opinionated and loosely
+                        coupled. This means that the individual functions have their tasks are very well specified
+                        without having to rely on referring to other functions and their workings. This lets
+                        programmers take out functions, refactor or rework them, and put them back into the rest of the
+                        code with as little risk of breaking the overall functionality as possible (minimising risk,
+                        interruption of delivery of value, and enabling continuous improvement with speed and safety).
+                    </p>
+                    <p>
+                        With scope, we want our objects and variables to be used by our functions with as much safety
+                        as possible, so we can isolate them for exclusive use by the function in question. We also want
+                        to optimise the performance of our code, so we want to discard these objects and variables once
+                        they have served their purpose. Once the function has finished performing its task, it throws
+                        away whatever it doesn't need anymore, freeing our processing power for all the other tasks we
+                        need to do.
+                    </p>
+                    <p>
+                        While it doesn't feel like this would make an impact with the kind of code we're working on for
+                        bootcamp, performance optimisation is a big school of thought in the tech world (and an even
+                        bigger impact for clients and the products they are expected to run on their infrastructure).
+                        We want to build the best habits possible from the very beginning, so we need to take and
+                        understand scope very seriously in Javascript.
+                    </p>
+                    <h5>Global-isation</h5>
+                    <p>
+                        Sometimes, we have objects and variables that are strongly opinionated by design for the
+                        overall code we are delivering. Outside of any functions, and typically at the very beginning
+                        of the code, we define all of objects and variables for use.
+                    </p>
+                    <p>
+                        Global variables and objects can be inherited by functions preceding those variables or
+                        objects. We can ask a function to retrieve the value of a global variable or object. We can
+                        even ask the function to change the value of that variable or object for the purpose of that
+                        function.
+                    </p>
+                    <p>
+                        However, best practice is to avoid using global variables, and when we do, use them with
+                        caution and care. This is particularly important in coding projects involving multiple
+                        developers: one global variable that's been defined in different ways by different people can
+                        arise in conflicts, both in code and in teams!
+                    </p>
+                    <h5>Shoot down to the local</h5>
+                    <p>
+                        OK, I've convinced you that localising your variables is better than globalising them. So how
+                        do we do that?
+                    </p>
+                    <p>
+                        Simply put, any variable or object that you declare <i>within</i> a function is exclusive to
+                        that <i>specific</i> function. Here's an example:
+                        <pre><code>function updateCounts () {
+                            var totals = {
+                              blue: 0,
+                              green: 0,
+                              invisible: 0
+                            }
+                        </code></pre>
+                        In this example, the object <code>totals</code> is for the exclusive use of the function <code>updateCounts</code>. <code>totals</code> and its parameters cannot be used by any other function in the code (in this context, this is from the game we were asked to build in an earlier sprint).
+                    </p>
+                    <p>
+                        After this function has been executed, <code>totals</code> and its parameters are discarded - not to be used or seen again anywhere else in the code!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
