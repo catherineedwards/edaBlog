@@ -62,7 +62,7 @@ This is the "All Clear" function.
 
 ### CEase and desist
 
-If `val` is equal to AC, we only re-initialise `temp` values.
+If `val` is equal to `CE`, we only re-initialise `temp` values.
 
 We also reinitialise/clear the `val` being displayed in `#answer`.
 
